@@ -95,10 +95,14 @@ public class addtask extends javax.swing.JFrame {
         jLabel1.setText("HOURS");
         jPanel2.add(jLabel1);
         jLabel1.setBounds(110, 130, 50, 16);
+
+        jTextField3.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         jPanel2.add(jTextField3);
-        jTextField3.setBounds(200, 150, 80, 22);
+        jTextField3.setBounds(200, 150, 80, 30);
+
+        jTextField4.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         jPanel2.add(jTextField4);
-        jTextField4.setBounds(110, 150, 80, 22);
+        jTextField4.setBounds(110, 150, 80, 30);
 
         jToggleButton1.setForeground(new java.awt.Color(0, 102, 102));
         jToggleButton1.setText("AM");
@@ -108,7 +112,7 @@ public class addtask extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jToggleButton1);
-        jToggleButton1.setBounds(290, 150, 50, 25);
+        jToggleButton1.setBounds(290, 150, 50, 30);
 
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(0, 102, 102));
@@ -125,15 +129,11 @@ public class addtask extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 569, Short.MAX_VALUE))
+            .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 581, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 430, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 443, Short.MAX_VALUE)
         );
 
         pack();
