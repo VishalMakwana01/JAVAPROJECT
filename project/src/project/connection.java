@@ -15,22 +15,19 @@ import java.sql.Statement;
  * @author Admin
  */
 public class connection {
-     public static void connect() {
+     public static Connection connect() {
         Connection conn = null;
         try {
             // db parameters
-            String url = "jdbc:sqlite:C:\\Users\\Admin\\Documents\\mydatabase.sqlite";
+            String url = "jdbc:sqlite:C:\\Users\\Vishal\\Desktop\\project.sqlite";
             // create a connection to the database
             conn = DriverManager.getConnection(url);
             Statement stmt=(Statement)conn.createStatement();
-
-         String name="Jerome Dcruz";
-         
-       String insert="INSERT INTO test VALUES('"+name+"')";
-       stmt.executeUpdate(insert);
+            
+       
 
             System.out.println("Connection to SQLite has been established.");
-            
+            return conn;
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         } finally {
@@ -42,6 +39,8 @@ public class connection {
                 System.out.println(ex.getMessage());
             }
         }
+         return null;
+         
     }
     /**
      * @param args the command line arguments
